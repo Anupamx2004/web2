@@ -1,0 +1,138 @@
+/* General Page Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9f4;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #4CAF50, #2E8B57);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* MAIN FULL-WIDTH HEADINGS */
+.full-width-heading {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #4CAF50, #2E8B57);
+    margin: 0;
+}
+
+/* Content sections (for non-boxed text) */
+.content {
+    padding: 30px;
+    font-size: 18px;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Feature Section (Only for cropping patterns) */
+.feature-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: #ffffff;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-section:hover {
+    transform: scale(1.02);
+}
+
+/* Alternating Sections */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Text Content */
+.feature-text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.feature-text h2 {
+    color: #2E8B57;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-text p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Image Section */
+.feature-image {
+    flex: 1;
+    text-align: center;
+}
+
+.feature-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* References List */
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    margin: 10px 0;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.content ul li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Contact Section */
+.content p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2E8B57;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .feature-text {
+        text-align: center;
+    }
+}
